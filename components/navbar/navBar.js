@@ -18,9 +18,8 @@ export default function NavBar() {
     setShowMobileNavigationList(!showMobileNavigationList);
   }
 
-  if (router.pathname === "/lecture") reset(ulListRef.current);
-
   useEffect(() => {
+    reset(ulListRef.current);
     document.addEventListener("scroll", () => {
       const home = document.getElementById("home");
       const history = document.getElementById("history");
@@ -50,7 +49,7 @@ export default function NavBar() {
         }
       }
     });
-  }, []);
+  }, [router]);
   return (
     <div className={navBarStyles.navbar}>
       <div className={navBarStyles.logoBox}>
