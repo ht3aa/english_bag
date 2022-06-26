@@ -1,116 +1,213 @@
-.container {
-  padding: 0 2rem;
+.hero {
+  width: 100%;
+  background: url("/bg_img.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero svg {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: white;
+  font-size: 30px;
+  animation: upDown 2s ease-in-out infinite;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+@keyframes upDown {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -50px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+.overlayer {
+  width: 100%;
+  padding: 130px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    #f6f6f6 83.68%
+  );
+  display: flex;
+}
+
+.mainContent {
+  width: 44%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
 }
 
-.footer {
+.mainContent p {
+  width: 80%;
+  font-weight: normal;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.mainContent h5 {
+  font-weight: normal;
+}
+.mainContent a {
+  width: max-content;
+}
+
+@media only screen and (max-width: 700px) {
+  .overlayer {
+    padding: 100px 0px;
+  }
+  .logo {
+    display: none;
+  }
+
+  .mainContent {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .mainContent h4 {
+    margin: 25px auto;
+  }
+  .mainContent a {
+    margin: 0 auto;
+  }
+}
+
+.divider {
+  width: 80%;
+  margin: 150px auto 50px auto;
+  border-bottom: 2px solid black;
+}
+.description {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* =============================================== */
+
+.subContentContainer {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 70px auto;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.subContent {
+  width: 55%;
+  padding-top: 10px;
+}
+.subContent h3,
+.aboutUs h3 {
+  margin-bottom: 20px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+@media only screen and (max-width: 1050px) {
+  .subContentContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .subContent {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .description {
+    text-align: center;
+  }
 }
+/* =============================================== */
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.mainContainer {
+  width: 100%;
+  margin: 20px auto 0 auto;
+  padding-bottom: 20px;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  width: max-content;
+  margin: 40px auto;
+  padding: 10px;
+  border-bottom: 2px solid black;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.cardContainer {
+  width: 70%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 150px auto 0 auto;
   flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 280px;
+  background-color: white;
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s ease-in-out;
 }
-
 .card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.card:focus {
+  box-shadow: 0px 4px 8px rgba(102, 102, 102, 0.5);
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@media only screen and (max-width: 760px) {
+  .cardContainer {
+    justify-content: center;
   }
+}
+
+.cardImg {
+  width: 100%;
+  height: 150px;
+  background: url("/america_flag_card.png") center center;
+  background-size: contain;
+}
+
+.cardContent {
+  width: 100%;
+  padding: 20px;
+  min-width: 175px;
+  text-align: center;
+}
+
+.cardContent p {
+  margin: 15px 0;
+}
+
+.cardContent button {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+.cardOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 33, 61, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media only screen and (max-width: 410px) {
+  .cardContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.aboutUs {
+  width: 50%;
+  margin: 60px auto 260px auto;
+  text-align: center;
 }
