@@ -77,12 +77,12 @@ export default function Home() {
         Saxon. Through the educational reforms of King Alfred in the 9th century
         and the influence of the kingdom of Wessex, the West Saxon dialect
         became the standard written variety. The epic poem Beowulf is written in
-        West Saxon, and the earliest English poem, Cædmon's Hymn, is written in
-        Northumbrian. Modern English developed mainly from Mercian, but the
-        Scots language developed from Northumbrian. A few short inscriptions
-        from the early period of Old English were written using a runic script.
-        By the 6th century, a Latin alphabet was adopted, written with
-        half-uncial letterforms. It included the runic letters wynn ⟨ƿ⟩ and
+        West Saxon, and the earliest English poem, Cædmon&lsquo;s Hymn, is
+        written in Northumbrian. Modern English developed mainly from Mercian,
+        but the Scots language developed from Northumbrian. A few short
+        inscriptions from the early period of Old English were written using a
+        runic script. By the 6th century, a Latin alphabet was adopted, written
+        with half-uncial letterforms. It included the runic letters wynn ⟨ƿ⟩ and
         thorn ⟨þ⟩, and the modified Latin letters eth ⟨ð⟩, and ash ⟨æ⟩.
         <a href="https://en.wikipedia.org/wiki/English_language">
           more details

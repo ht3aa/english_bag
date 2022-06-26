@@ -43,6 +43,7 @@ export default function Lecture() {
               key={img}
               width="816"
               height="1056"
+              alt="page"
             />
           );
         })}
