@@ -1,5 +1,4 @@
 import lectureStyles from "../styles/Lecture.module.css";
-import { db } from "../data/db";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { useState } from "react";

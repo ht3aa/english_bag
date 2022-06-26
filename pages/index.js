@@ -102,7 +102,7 @@ export default function Home() {
             throughout its 14 diverse units, a lot is covered including grammar,
             vocabulary, writing, and speaking activities. Every unit is
             approximately 8 pages long and the activities provided in each
-            lesson are easy to follow and relevant to the students’ level. The
+            lesson are easy to follow and relevant to the students level. The
             topics throughout the book deal with things like food,
             likes/dislikes, asking questions, life at home, travel, and several
             other basic level subjects; the layout of each unit is simple and
