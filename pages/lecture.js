@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 export default function Lecture() {
   const router = useRouter();
-  const imgs = router.query.imgs.split(",");
+  const imgs = router.query.imgs && router.query.imgs.split(",");
   const { audio, file } = router.query;
 
   const [showAudioControl, setShowAudioControl] = useState(false);
@@ -36,17 +36,18 @@ export default function Lecture() {
       )}
 
       <section className={lectureStyles.fileSection}>
-        {imgs.map((img, index) => {
-          return (
-            <Image
-              src={`/files/${imgs[index]}`}
-              key={img}
-              width="816"
-              height="1056"
-              alt="page"
-            />
-          );
-        })}
+        {imgs &&
+          imgs.map((img, index) => {
+            return (
+              <Image
+                src={`/files/${imgs[index]}`}
+                key={img}
+                width="816"
+                height="1056"
+                alt="page"
+              />
+            );
+          })}
       </section>
       <a href={`/files/${file}`} download>
         <button className="downloadBtn">
