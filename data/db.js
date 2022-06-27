@@ -1,5 +1,5 @@
 export const db = {
-  lectures: [
+  lectures_part1: [
     {
       id: 0,
       lesson_name: "Lecture 1",

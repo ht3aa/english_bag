@@ -67,7 +67,6 @@ label {
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -122,6 +121,7 @@ footer p {
   padding: 10px;
 }
 
+/* ╔. lecture file styles .═════════╗ */
 .backButton {
   position: absolute;
   left: 20px;
@@ -152,12 +152,18 @@ audio {
   z-index: 1;
 }
 
+/* ╚═════════. lecture file styles .╝ */
+
+/* ╔. index file styles .═════════╗ */
+
 #headwayBook h2 {
   display: inline-block;
 }
 #headwayBook a {
   margin-left: 10px;
 }
+
+/* ╚═════════. index file styles .╝ */
 
 .sr-only {
   position: absolute;

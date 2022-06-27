@@ -2,12 +2,13 @@ import lectureStyles from "../styles/Lecture.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { useState } from "react";
+
 export default function Lecture() {
   const router = useRouter();
   const imgs = router.query.imgs && router.query.imgs.split(",");
   const { audio, file } = router.query;
-
   const [showAudioControl, setShowAudioControl] = useState(false);
+
   return (
     <div className={lectureStyles.container}>
       <button onClick={() => router.push("/")} className="backButton">

@@ -15,7 +15,6 @@ export default function Home() {
             name="description"
             content="Bag that contains files and videos about english language which will simplified and make it easy for you to understand the grammar of English language"
           />
-
           <title>English Bag</title>
         </Head>
         <div className={homeStyles.overlayer}>
@@ -157,7 +156,7 @@ export default function Home() {
           I am Mustafa Ghulam Sayed, a student at Al-Imam Al-Kadhim University,
           Department of Technology Engineering the computer. My goal of this
           site is to facilitate and simplify the English language on The reader
-          by providing simplified parts of the book, Hedway Plus
+          by providing simplified parts of the book.
         </p>
       </section>
       <footer>
