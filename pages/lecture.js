@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Lecture() {
   const router = useRouter();
   const imgs = router.query.imgs && router.query.imgs.split(",");
-  const { audio, file } = router.query;
+  const { audio, file, video } = router.query;
   const [showAudioControl, setShowAudioControl] = useState(false);
 
   return (
@@ -35,7 +35,15 @@ export default function Lecture() {
           Your browser does not support the audio element.
         </audio>
       )}
-
+      <iframe
+        width="400"
+        height="315"
+        src={video}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
       <section className={lectureStyles.fileSection}>
         {imgs &&
           imgs.map((img, index) => {
