@@ -133,7 +133,7 @@ export default function Home() {
                         <h4>{card.lesson_name}</h4>
                         <p>{card.description}</p>
                         <Link
-                          href={`/lecture?imgs=${card.file_imgs}&audio=${card.audio_path}&file=${card.file_path}`}
+                          href={`/lecture?imgs=${card.file_imgs}&audio=${card.audio_path}&file=${card.file_path}&video=${card.video_path}`}
                           passHref
                         >
                           <button>Start lesson</button>
