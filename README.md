@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# English Bag
 
-## Getting Started
+A [website](https://eng-bag-v2.vercel.app/) that contains files and videos which explain English language easily and simply.
 
-First, run the development server:
+## features
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Downloadable lecture files, voice records.
+2. You can read the lecture while listening the voice record or the videos
+3. responsive website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tools
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. [Nuxt.js](https://nextjs.org/) React framework
+2. [Vercel](https://vercel.com/) For hosting
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Note
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I used Nuxt.js because it has nice features and an easy way of routing and implementing a database and server app if the customer wants to add a database feature.
